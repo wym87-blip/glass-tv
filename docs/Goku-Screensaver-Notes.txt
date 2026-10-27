@@ -1,0 +1,55 @@
+Goku Screensaver Setup Notes
+===========================
+
+Projek Asal:
+cleanyourtv
+
+Addon:
+photo-screensaver
+
+Package:
+com.gathin.photodream
+
+Lokasi Gambar:
+C:\Users\EDGENTA\Pictures\goku1.jpg
+C:\Users\EDGENTA\Pictures\goku2.jpg
+C:\Users\EDGENTA\Pictures\goku3.jpg
+C:\Users\EDGENTA\Pictures\goku4.jpg
+
+Fail Penting:
+app/src/main/java/com/gathin/photodream/Slides.java
+
+Tetapan Animasi:
+ZOOM asal = 1.12
+Cadangan ZOOM = 1.35 atau 1.50
+
+Kesan Yang Sedia Ada:
+- Crossfade antara gambar
+- Ken Burns effect
+- Zoom perlahan
+- Drift kiri / kanan
+- Drift atas / bawah
+- Sokongan video MP4
+
+Status:
+[✓] Jumpa addon photo-screensaver
+[✓] Jumpa package com.gathin.photodream
+[✓] Muat turun gambar Goku
+[✓] Kenal pasti fail Slides.java
+[ ] Build APK
+[ ] Upload gambar ke TV
+[ ] Aktifkan screensaver
+[ ] Dapatkan IP TV
+
+Perintah Build:
+cd addons/photo-screensaver
+./gradlew assembleRelease
+
+Package Screensaver:
+com.gathin.photodream
+
+Aktifkan Screensaver:
+settings put secure screensaver_components com.gathin.photodream/.PhotoDream
+
+Nota:
+Apabila mahu sambung semula, buka repo glass-tv dan rujuk fail ini.
